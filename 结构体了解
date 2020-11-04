@@ -1,0 +1,27 @@
+//       ------>结构体<-------
+//定义一个抽象的对象。如学生
+//描述一个学生，要一些参数如：名字，年龄，性别，电话...
+//struct--->结构体关键字。 stu--->结构体标签（可自定义）。struct stu --->结构体类型
+struct stu
+{
+	//以下4项为成员变量
+	char name[20];
+	short age;
+	char sex[5];
+	char tele[12];
+}s1,s2,s3;// 这里的s1，s2，s3是三个全局的结构体变量（全局变量）
+
+typedef struct stu //typedef--->就是重命名的意思。整个语句是，给struct stu重新命令
+{
+	//以下4项为成员变量
+	char name[20];
+	short age;
+	char sex[5];
+	char tele[12];
+}Stu;// 重新命名为Stu！表示的是类型！
+
+int main()
+{
+	struct stu s;  //结构体类型创建变量，局部变量
+	return 0;
+}

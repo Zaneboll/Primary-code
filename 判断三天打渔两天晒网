@@ -1,0 +1,17 @@
+// 三天打鱼两天晒网 的简易版！
+int main()
+{
+	int day, m;
+	scanf("%d", &day);
+	m = day % 5;
+	if (m==1||m==2||m==3)
+	{
+		printf("打鱼\n");
+	}
+	else
+	{
+		printf("晒网\n");
+	}
+	printf("%d\n", m);
+	return 0;
+}

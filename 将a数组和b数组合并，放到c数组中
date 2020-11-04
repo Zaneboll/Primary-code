@@ -1,0 +1,43 @@
+int main()
+{
+	char height;   //char范围是有符号-128~127 ，下面赋值溢出！导致打印结果是负数
+	height = 170;
+	printf("小虫子的身高是%d厘米!\n", height);
+	return 0;
+}
+
+// 将a数组和b数组合并，放到c数组中！
+void main()
+{
+	int a[5], b[5], i, j, c[10], n, t;
+	printf("(请从小到大输入5个整数)数组a:");
+	for (i = 0; i<5; i++)
+	{
+		scanf("%d", &a[i]);
+	}
+	printf("(请从小到大输入5个整数)数组b:");
+	for (j = 0; j<5; j++)
+	{
+		scanf("%d", &b[j]);
+	}
+	if (a[4]<b[0])
+	{
+		for (n = 0; n <= 4; n++)
+			c[n] = a[n];
+		c[n + 5] = b[n];
+	}
+	else if (a[4]>b[0])
+	{
+		for (n = 0; n <= 4; n++)
+		{
+			c[n] = b[n];
+			c[n + 5] = a[n];
+		}
+		
+	}
+	printf("合并后的数组c为：");
+	for (n = 0; n <= 9; n++)
+	{
+		printf("%d", c[n]);
+	}	
+}

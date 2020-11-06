@@ -1,0 +1,22 @@
+int main()
+{
+	double cost, kwh;
+	scanf("%lf", &kwh);
+
+	if (kwh > 0 && kwh <= 50)
+	{
+		cost = kwh*0.53;
+		printf("cost = %.2f", cost);
+	}
+	else if (kwh>50&&kwh<10000)
+	{
+		cost = (kwh - 50)*0.58 + 50 * 0.53;
+		printf("cost = %.2f", cost);
+	}
+	else if (kwh<0)
+	{		
+		printf("Invalid Value!");
+	}
+		
+	return 0;
+}

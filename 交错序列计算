@@ -1,0 +1,14 @@
+//交错序列1-2/3+3/5-4/7+5/9-6/11....
+int main()
+{
+	int a;
+	double b, num;
+	scanf("%d", &a);
+	num = 0;
+	for (b = 1; b <= a; b++)
+	{
+		num = num + b / (2 * b - 1)*pow(-1, b + 1);
+	}
+	printf("%.3f", num);
+	return 0;
+}

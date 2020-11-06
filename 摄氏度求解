@@ -1,0 +1,7 @@
+int main()
+{
+	int C;
+	scanf("%d", &C);
+	printf("Celsius = %d\n", 5 * (C - 32) / 9);//C为华氏摄氏度
+	return 0;
+}

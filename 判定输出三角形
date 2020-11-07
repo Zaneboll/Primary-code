@@ -1,0 +1,16 @@
+// 三角形：
+//int main()
+//{
+//	int x = 0;
+//	int y = 0;
+//	int z;
+//	scanf_s("%d", &z);
+//	for (x = 0; x < z; x++)
+//	{
+//		for (y = 0; y <= x; y++)
+//			printf("*");
+//		printf("\n");
+//	}
+//	printf("\n");
+//	return 0;
+//}

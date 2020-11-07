@@ -1,0 +1,22 @@
+int DigitSum(unsigned int a)
+{
+	if (a > 9)
+	{
+		return DigitSum(a / 10) + a % 10;
+
+	}
+	else
+	{
+		return a;
+
+	}
+}
+
+int main()
+{
+	unsigned int x = 0;
+	scanf_s("%d", &x);
+	int ret = DigitSum(x);
+	printf("ret=%d\n", ret);
+	return 0;
+}

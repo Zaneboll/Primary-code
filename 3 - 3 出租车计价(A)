@@ -1,0 +1,24 @@
+//demo 1:
+int main()
+{
+	double cost = 0, km = 0;
+	int min = 0,t=0,sum=0;
+	scanf("%lf%d", &km, &min);
+
+	if (km <= 3 && min < 5)
+	{
+		t = 10;
+	}
+	else if (km <= 10 && min < 5)
+	{
+		t = 10 + (km - 3)*2.0;
+	}
+	else
+	{
+		t = 10 + (10 - 3)*2.0 + (km - 10)*3.0;
+		sum = min / 5.0 * 2.0;
+	}	
+	cost = t + sum;
+	printf("%.0f\n", cost);
+	return 0;
+}

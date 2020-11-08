@@ -1,0 +1,14 @@
+//demo 2:
+int main()
+{
+	float km; //不能定义double类型，否则答案错误！
+	int min;
+	scanf("%f %d", &km, &min);
+	if (km <= 3)
+		printf("%d\n", 10 + min / 5 * 2);
+	if (km>3 && km <= 10)
+		printf("%.0f\n", (km - 3)*2.0 + 10 + min / 5 * 2);
+	if (km>10)
+		printf("%.0f\n", (km - 10)*3.0 + 24 + min / 5 * 2);
+	return 0;
+}

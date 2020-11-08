@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main()
+{
+	char a, b;
+	printf("输入一个小写字母:\n");
+	a = getchar();
+	b = a - 32;   //a+32 为小写转大写！
+	printf("转换后的字母为：%c，%d\n", b, b);
+	return 0;
+}
+int main()
+{
+	char a, b, c;
+	printf("请输入以个字母>: ");
+	a = getchar();
+	if (a>='a'&&a<='z')
+	{
+		b = a - 32;
+		printf("转换后的字母为：%c，%d\n", b, b);
+	}
+	else if (a >= 'A'&&a <= 'Z')
+	{
+		b = a + 32;
+		printf("转换后的字母为：%c，%d\n", b, b);
+	}
+	return 0;
+}

@@ -1,0 +1,21 @@
+int main()
+{
+	int spe1 = 0, spe2 = 0, i = 0;
+	double a=0;
+	scanf("%d%d", &spe1, &spe2);	
+	i = spe1 - spe2;
+	a = i*100.0 / spe2;
+	if (a>= 10 && a< 50)
+	{
+		printf("Exceed %.0f%%.Ticket 200\n", a);
+	}
+	else if (a>50)
+	{
+		printf("Exceed %.0f%%.Licens Revoked\n", a);
+	}
+	else if (a< 10)
+	{
+		printf("OK\n");
+	}
+	return 0;
+}
